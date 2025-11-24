@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins", "Segoe UI", sans-serif; 
+    background: rgba(2, 146, 202, 0.836);  
+    color: #00379c;      
+    line-height: 1.7;     
+}
+
+
+header {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;          
+    background: #0f03af;  
+    color: rgba(255, 255, 255, 0.822);        
+    display: flex;        
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+    z-index: 1000;        
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+nav a {
+    color: rgb(255, 255, 255);  
+    margin-left: 25px;
+    text-decoration: none;  
+    font-weight: 500;
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: #e61708; 
+}
+
+
+.container {
+    max-width: 1000px;  
+    margin: 100px auto 50px; 
+    padding: 0 20px;
+}
+
+
+.section {
+    background: rgb(243, 243, 243);
+    padding: 40px;
+    margin: 15px 0;
+    border-radius: 20px; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-6px); 
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12); 
+}
+
+/*  TÍTULOS  */
+.section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color:rgb(4, 60, 241);         
+    border-left: 5px solid #ec0808;
+    padding-left: 12px;
+}
+
+
+p {
+    font-size: 1.1rem;
+    color: #444; 
+}
+
+
+img {
+    width: 280px;
+    border-radius: 12px; 
+    border: 4px solid #eb0101;  
+    display: block;
+    margin: 25px auto; 
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.05); 
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    .section {
+        padding: 30px 20px;
+    }
+    img {
+        width: 100%; 
+    }
+}
